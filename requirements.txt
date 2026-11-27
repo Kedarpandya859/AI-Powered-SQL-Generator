@@ -1,11 +1,18 @@
-fastapi
-streamlit
-openai
-sqlalchemy
-python-dotenv
-sqlparse
-langchain
-llama-index
-chromadb
-mysql-connector-python
-pandas
+fastapi>=0.110,<1
+uvicorn>=0.29
+streamlit>=1.38,<2
+requests>=2.31,<3
+openai>=1.40,<4
+sqlalchemy>=2.0,<3
+sqlparse>=0.5,<1
+pandas>=2.0,<3
+python-dotenv>=1.0,<2
+
+# Database drivers: install the one for your database.
+mysql-connector-python>=8.3
+# psycopg2-binary>=2.9   # PostgreSQL
+# (SQLite needs no driver)
+
+# Development
+pytest>=8
+httpx>=0.27
